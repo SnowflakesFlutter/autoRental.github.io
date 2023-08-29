@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;700&display=swap");
+
 /* Default Styling */
 * {
   padding: 0;
@@ -55,10 +56,10 @@ p {
   font-weight: 600;
   color: var(--whiteColor);
   font-size: 12px;
-}
-.primaryBtn:hover {
-  background: var(--secondaryColor);
-  color: var(--blackColor);
+  &:hover {
+    background: var(--secondaryColor);
+    color: var(--blackColor);
+  }
 }
 
 .container {
@@ -73,8 +74,7 @@ p {
 img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .icon {
@@ -96,9 +96,10 @@ img {
     margin: auto;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .container {
     width: 75%;
     margin: auto;
   }
-}/*# sourceMappingURL=App.css.map */
+}

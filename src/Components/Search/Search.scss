@@ -1,0 +1,92 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
+}
+
+.search {
+  padding: 2rem 0;
+  .secContainer {
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.7rem;
+      padding: 1rem 0;
+      text-align: center;
+      color: var (--blackColor);
+    }
+
+    .searchDiv {
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+
+      input {
+        padding: 5px 10px;
+        border: 1px solid var(--secondaryColor);
+        border-radius: 10px;
+        outline: none;
+        width: 100%;
+      }
+      &:focus {
+        border: none;
+        border: 1px solid var(--secondaryColor);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .search {
+    .title {
+      font-size: 25px;
+      padding: 2rem 0;
+    }
+
+    .searchDiv {
+      input {
+        padding: 10px;
+        font-weight: 600;
+        color: var(--primaryColor);
+      }
+
+      .btn {
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 18px;
+
+        .icon {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .search {
+    .title {
+      font-size: 30px;
+      padding: 2rem 0;
+    }
+
+    .searchDiv {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .search {
+    width: 80%;
+    margin: auto;
+
+    .searchDiv {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
